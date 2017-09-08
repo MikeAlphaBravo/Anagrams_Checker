@@ -5,27 +5,21 @@ class AnagramChecker
     @second = second
   end
 
-  # compare length of two string inputs
+  # 1 compare length of two string inputs
   def same_length?
     @first.length == @second.length
   end
 
-  # compare strings for same letters
+  # 1 + 2 compare strings for same letters plus added step 2 downcase to this method
   def same_letters?
-    (@first.upcase.split("") - @second.upcase.split("")).empty?
+    (@first.downcase.split("") - @second.downcase.split("")).empty?
   end
 
   # 1 compare both variable of length and letters
-  # def anagrams?
-  #   same_length? && same_letters?
-  # end
+  def anagrams?
+    same_length? && same_letters?
+  end
 
-
-  # 2 lower case all inputs
-  # def lower_case
-  #   lower_case_array = []
-  #
-  # end
 
   # 3 find if strings are palindromes
   # def palindrome_checker(placeholder)
