@@ -7,7 +7,7 @@
 
 ## Description
 
-<!-- _This program has been written for personal purposes only and is not for profit. Use of Ruby has been used to create a program with simple input -> return loop and object oriented design.  The user inputs selections which return an order, total cost and receipt._ -->
+_This program has been written for personal purposes only and is not for profit. Use of Ruby has been used to create a program with simple input -> returning information on whether or not your two words are anagrams, antigrams, palindromes or not any of the above.  The user inputs selections which return an responses._
 
 ## Just follow this link to view website or developer's info
 
@@ -15,9 +15,7 @@
 
 ## Specifications
 
-<!-- * It can take users selection and return a total cost
-  * User select toppings/size input: selectors output: total price
-  * User input: information output: receipt showing delivery info -->
+* It can take users input and return answers
 
 ## Known Bugs
 

@@ -28,9 +28,14 @@ describe('AnagramChecker#bdd_independent') do
     expect(AnagramChecker.contains_only_words?("this is only a test with snthsnthsnthsnt")).to(eq(false))
   end
 
-  # it("checks BOTH strings for not an empty array") do
-  #   a = AnagramChecker.new("dormitory","dirty room")
-  #   expect(a.contains_only_words?).to(eq(false))
+  # it("checks strings for no matching letters") do
+  #   a = AnagramChecker.new("dormitory","dirtyroom")
+  #   expect(a.palindrome?).to(eq("OMG you made a palindrome too!"))
+  # end
+
+  # it("checks strings of multiple words for anagram and antigram") do
+  #   a = AnagramChecker.new("dormitory","dirtyroom")
+  #   expect(a.palindrome?).to(eq("OMG you made a palindrome too!"))
   # end
 
 end
