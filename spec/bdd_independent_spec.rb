@@ -8,9 +8,10 @@ describe('AnagramChecker#bdd_independent') do
     expect(x.same_length?).to(eq(true))
   end
 
-  # it("checks strings for same letters") do
-  #   expect(same_letters?("ruby", "ybur")).to(eq(true))
-  # end
+  y = AnagramChecker.new("bury","ruby")
+  it("checks strings for same letters") do
+    expect(y.same_letters?).to(eq(true))
+  end
 
   # it("checks strings for same length and same letters") do
   #   expect(same_letters?("ruby", "bury")).to(eq(true))

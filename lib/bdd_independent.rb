@@ -11,9 +11,9 @@ class AnagramChecker
   end
 
   # compare strings for same letters
-  # def same_letters?
-  #   (@first.upcase.split("") - @second.upcase.split("")).empty?
-  # end
+  def same_letters?
+    (@first.upcase.split("") - @second.upcase.split("")).empty?
+  end
 
   # 1 compare both variable of length and letters
   # def anagrams?
