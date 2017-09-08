@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
-# puts 'What is your name?'
-# name = gets.chomp
-# puts "Hello #{name}!"
+puts 'Input a word'
+word1 = gets.chomp
+puts 'Input another word'
+word2 = gets.chomp
+puts "Hello #{name}!"
