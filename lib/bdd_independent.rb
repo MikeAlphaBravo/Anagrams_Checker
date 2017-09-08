@@ -40,6 +40,12 @@ class AnagramChecker
 
   # 3 find if strings are palindromes
   # should return Ex: "These words are palindromes."
+  def palindrome?
+     @first.downcase.delete(" ") == @second.downcase.delete(" ").reverse
+     if true
+       "OMG you made a palindrome too!"
+     end
+   end
   # def palindrome_checker(placeholder)
   #   letters_array = []
   #   original_array = []
