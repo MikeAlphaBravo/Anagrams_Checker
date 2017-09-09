@@ -15,7 +15,6 @@ class AnagramChecker
   end
 
   # 1 + 2 compare strings for same letters plus added step 2 downcase to this method
-  # should return Ex: "Tea" is still an anagram of "Eat"
   def same_letters?
     if (@first.downcase.split("") - @second.downcase.split("")).empty?
       true
@@ -27,21 +26,17 @@ class AnagramChecker
   # 1 compare both variable of length and letters
   # should return Ex: "These words are anagrams."
   def anagrams?
-    same_length? && same_letters?
-    if true
-      "These words ARE anagrams!"
+    if same_length? && same_letters?
+      true
     else
-      "Hmmm, we seem to have a problem, I don't think those are anagrams. Try again!"
+      false
     end
   end
 
   # 3 find if strings are palindromes
   # should return Ex: "These words are palindromes."
   def palindrome?
-     @first.downcase.delete(" ") == @second.downcase.delete(" ").reverse
-     if true
-       "OMG you made a palindrome too!"
-     end
+     @first.downcase.delete(" ") == @second.downcase.delete(" ")
    end
 
 
@@ -61,10 +56,39 @@ class AnagramChecker
     end
   end
 
-  # 5 check if antigrams (no letters match)
-  # returns: "These words have no letter matches and are antigrams."
+# 5 check if antigrams (no letters match)
+# returns: "These words have no letter matches and are antigrams."
+  # def antigram?
+  #   if (@first.downcase.split("")) -  (@second.downcase.split("")).length?
+  #     true
+  #   else
+  #     false
+  #   end
+  # end
 
 
   # 6 account for multiple words being anagrams or antigrams (spaces and punc. shouldn't count so remove)(use regular expression to remove additional characters)
 
 end
+
+
+# def same_letters?(first,second)
+#   if (first.downcase.split("") - second.downcase.split("")).empty?
+#     true
+#   else
+#     false
+#   end
+# end
+#
+# def antigram (first,second)
+#   length_minus1 = first.downcase.split("")
+#   length_minus2 = second.downcase.split("")
+#   array.each do |letter|
+#   while
+#     array.each do
+#   if (length_minus1 - length_minus2) == 0
+#     false
+#   else
+#     true
+#   end
+# end
