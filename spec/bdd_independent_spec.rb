@@ -39,8 +39,15 @@ describe('AnagramChecker#bdd_independent') do
   end
 
 # 5
+  it("#antigram? returns true if both inputs share no letters.") do
+    a = AnagramChecker.new("this","rock")
+    expect(a.antigram?).to(eq(true))
+  end
 
-
+  it("#antigram? returns false if inputs share even 1 letter.") do
+    a = AnagramChecker.new("this","sock")
+    expect(a.antigram?).to(eq(false))
+  end
 
 # 6
 
