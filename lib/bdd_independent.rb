@@ -7,30 +7,18 @@ class AnagramChecker
 
   # 1 compare length of two string inputs
   def same_length?
-    if @first.length == @second.length
-      true
-    else
-      false
-    end
+    @first.length == @second.length
   end
 
   # 1 + 2 compare strings for same letters plus added step 2 downcase to this method
   def same_letters?
-    if (@first.downcase.split("") - @second.downcase.split("")).empty?
-      true
-    else
-      false
-    end
+    (@first.downcase.split("") - @second.downcase.split("")).empty?
   end
 
   # 1 compare both variable of length and letters
   # should return Ex: "These words are anagrams."
   def anagrams?
-    if same_length? && same_letters?
-      true
-    else
-      false
-    end
+    same_length? && same_letters?
   end
 
   # 3 find if strings are palindromes
