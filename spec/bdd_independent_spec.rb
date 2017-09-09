@@ -5,12 +5,12 @@ require('bdd_independent')
 describe('AnagramChecker#bdd_independent') do
   it("checks two words length") do
     a = AnagramChecker.new("bury","dill")
-    expect(a.same_length?).to(eq("These words are the same length, let's see about the rest shall we..."))
+    expect(a.same_length?).to(eq(true))
   end
 
   it("checks strings for same letters") do
     a = AnagramChecker.new("Bury","Ruby")
-    expect(a.same_letters?).to(eq("YEAH! These words are still anagrams despite capitalization!"))
+    expect(a.same_letters?).to(eq(true))
   end
 
   it("checks strings for same length and same letters") do

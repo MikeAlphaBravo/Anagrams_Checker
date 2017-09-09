@@ -7,22 +7,20 @@ class AnagramChecker
 
   # 1 compare length of two string inputs
   def same_length?
-    @first.length == @second.length
-    if true
-      "These words are the same length, let's see about the rest shall we..."
+    if @first.length == @second.length
+      true
     else
-      "Not the same length, but let's see about the rest!"
+      false
     end
   end
 
   # 1 + 2 compare strings for same letters plus added step 2 downcase to this method
   # should return Ex: "Tea" is still an anagram of "Eat"
   def same_letters?
-    (@first.downcase.split("") - @second.downcase.split("")).empty?
-    if true
-      "YEAH! These words are still anagrams despite capitalization!"
+    if (@first.downcase.split("") - @second.downcase.split("")).empty?
+      true
     else
-      "Hmmm, we seem to have a problem, I don't think those are anagrams. Try again!"
+      false
     end
   end
 
