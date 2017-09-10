@@ -11,7 +11,7 @@ _This program has been written for personal purposes only and is not for profit.
 
 ## Just follow this link to view website or developer's info
 
-<!-- https://MikeAlphaBravo.github.io/Pizza-Delivery -->
+https://github.com/MikeAlphaBravo/bdd_independent
 
 ## Specifications
 

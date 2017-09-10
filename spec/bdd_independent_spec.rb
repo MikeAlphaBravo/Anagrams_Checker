@@ -52,15 +52,4 @@ describe('AnagramChecker#bdd_independent') do
 # 6
 
 
-
-  # it("checks strings for no matching letters") do
-  #   a = AnagramChecker.new("dormitory","dirtyroom")
-  #   expect(a.palindrome?).to(eq("OMG you made a palindrome too!"))
-  # end
-
-  # it("checks strings of multiple words for anagram and antigram") do
-  #   a = AnagramChecker.new("dormitory","dirtyroom")
-  #   expect(a.palindrome?).to(eq("OMG you made a palindrome too!"))
-  # end
-
 end

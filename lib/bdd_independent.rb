@@ -36,10 +36,7 @@ class AnagramChecker
 	end
 
   def both_inputs_contain_only_words?
-    contains_only_words?(@first) && contains_only_words?(@second)
-    if false
-      "You have got some words here for sure!"
-    end
+    AnagramChecker.contains_only_words?(@first) && AnagramChecker.contains_only_words?(@second)
   end
 
 # 5 check if antigrams (no letters match)
@@ -49,5 +46,6 @@ class AnagramChecker
 
 
   # 6 account for multiple words being anagrams or antigrams (spaces and punc. shouldn't count so remove)(use regular expression to remove additional characters)
+  # .gsub(/[^a-zA-Z]/,"") calling something like this on length, letters and antigram should take out most of what I need.
 
 end

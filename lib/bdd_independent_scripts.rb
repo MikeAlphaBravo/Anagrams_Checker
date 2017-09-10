@@ -36,20 +36,13 @@ if new_anagram.palindrome?
 end
 
 # 4
-
+if new_anagram.both_inputs_contain_only_words?
+  puts "None of your words contain a, e, i, o, u or y so I don't think you've got any real words here."
+end
 
 # 5
-
+if new_anagram.antigram?
+  puts "You managed to put in two words or phrases that had absolutely nothing to do with one another!  NO letters matching!"
+end
 
 # 6
-
-
-
-# prints
-#
-#
-# return "These words are the same length, let's see about the rest shall we..."
-# return "YEAH! These words are still anagrams despite capitalization!"
-# return "These words ARE anagrams!"
-
-# These are not yet incorperated.
