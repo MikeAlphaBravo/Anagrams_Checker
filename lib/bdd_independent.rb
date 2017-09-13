@@ -12,7 +12,7 @@ class AnagramChecker
 
   # 1 + 2 compare strings for same letters plus added step 2 downcase to this method
   def same_letters?
-    (@first.downcase.split("") - @second.downcase.split("")).empty?
+    (@first.downcase.gsub(/[^a-z0-9\s]/i, '').split("") - @second.downcase.gsub(/[^a-z0-9\s]/i, '').split("")).empty?
   end
 
   # 1 compare both variable of length and letters
@@ -41,11 +41,9 @@ class AnagramChecker
 
 # 5 check if antigrams (no letters match)
   def antigram?
-    (@first.downcase.delete(" ").split("") &  @second.downcase.delete(" ").split("")).empty?
+    (@first.downcase.gsub(/[^a-z0-9\s]/i, '').split("") &  @second.downcase.gsub(/[^a-z0-9\s]/i, '').split("")).empty?
   end
 
-
-  # 6 account for multiple words being anagrams or antigrams (spaces and punc. shouldn't count so remove)(use regular expression to remove additional characters)
-  # .gsub(/[^a-zA-Z]/,"") calling something like this on length, letters and antigram should take out most of what I need.
+  # 6 account for multiple words being anagrams or antigrams (spaces and punc. shouldn't count so remove)(use regular expression to remove additional characters) This is included in step 5 already.
 
 end

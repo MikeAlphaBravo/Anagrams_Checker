@@ -46,3 +46,4 @@ if new_anagram.antigram?
 end
 
 # 6
+# included in steps 1 & 2 and step 5

@@ -11,7 +11,7 @@ describe('AnagramChecker#bdd_independent') do
 
 # 1 & 2
   it("checks strings for same letters") do
-    a = AnagramChecker.new("Bury","Ruby")
+    a = AnagramChecker.new("Bu ry","Rub y")
     expect(a.same_letters?).to(eq(true))
   end
 
@@ -45,7 +45,7 @@ describe('AnagramChecker#bdd_independent') do
   end
 
   it("#antigram? returns false if inputs share even 1 letter.") do
-    a = AnagramChecker.new("this","sock")
+    a = AnagramChecker.new("this big","sock lot")
     expect(a.antigram?).to(eq(false))
   end
 
