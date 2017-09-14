@@ -36,7 +36,7 @@ if new_anagram.palindrome?
 end
 
 # 4
-if new_anagram.both_inputs_contain_only_words?
+if new_anagram.both_inputs_contain_only_words? == false 
   puts "None of your words contain a, e, i, o, u or y so I don't think you've got any real words here."
 end
 
