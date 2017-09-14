@@ -48,8 +48,4 @@ describe('AnagramChecker#bdd_independent') do
     a = AnagramChecker.new("this big","sock lot")
     expect(a.antigram?).to(eq(false))
   end
-
-# 6
-
-
 end

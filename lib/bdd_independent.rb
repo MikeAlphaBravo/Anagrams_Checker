@@ -43,7 +43,4 @@ class AnagramChecker
   def antigram?
     (@first.downcase.gsub(/[^a-z0-9\s]/i, '').split("") &  @second.downcase.gsub(/[^a-z0-9\s]/i, '').split("")).empty?
   end
-
-  # 6 account for multiple words being anagrams or antigrams (spaces and punc. shouldn't count so remove)(use regular expression to remove additional characters) This is included in step 5 already.
-
 end
