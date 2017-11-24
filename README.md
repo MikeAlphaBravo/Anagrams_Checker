@@ -1,4 +1,4 @@
-# _BDD_Independent_
+# _Anigrams Checker_
 
 #### _BDD Project for Epicodus, Sept 8, 2017_
 
