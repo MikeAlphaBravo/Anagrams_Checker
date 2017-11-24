@@ -2,8 +2,8 @@
 
 #### _BDD Project for Epicodus, Sept 8, 2017_
 
-#### By _**Michael A. Brooks
-  *and the countless generous souls who've looked at my work and helped along the way**_
+#### By _**Michael A. Brooks**_
+  *and the countless generous souls who've looked at my work and helped along the way*
 
 ## Description
 
